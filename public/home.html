@@ -4,46 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Influências no Cinema</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="topo-site">
+    <header class="bg-dark text-white p-3">
         <img src="imagens/image-header.png" alt="Foto de Cinema" class="foto-header">
          <section class="menu">
-            <nav class="menu">
-                <a href="#">Inicio</a>
-        <a href="#">Músicos</a>
-        <a href="#">Artistas</a>
-        <a href="#">Outros</a>
+            <nav class="d-flex gap-3">
+                <a href="#" class="text-white">Inicio</a>
+        <a href="#" class="text-white">Músicos</a>
+        <a href="#" class="text-white">Artistas</a>
+        <a href="#" class="text-white">Outros</a>
     </nav>
     </section>
     </header>
 
-    <main class="conteudo-principal">
+    <main class="container mt-3">
         <div class="cabecalho-secao">
             <h1>Influência de Grandes Nomes no Cinema</h1>
-            <div class="barra-busca">
-            <input type="text" placeholder="Pesquisar...">
-            <button>🔍</button>
+            <div class="d-flex mt-3">
+            <input type="text" class="form-control me-2" placeholder="Pesquisar...">
+            <button class="btn btn-primary">🔍</button>
             </div>
         </div>
     <section class="categoria-musicos">
         <h2>Músicos</h2>
         <div class="carrossel">
-            <button class="seta">←</button>
-
-        <div class="lista-cards" id="lista-musicos">
-            <div class="card"><img src="imagens/ludacris.webp" alt="Foto de Ludacris" class="foto-artista"><P>Ludacris</P></div>
-            <div class="card"><img src="imagens/sza.jpg" alt="Foto de SZA" class="foto-artista"><P>Sza</P></div>
-            <div class="card"><img src="imagens/adele.jpg" alt="Foto de Adell" class="foto-artista"><P>Adele</P></div>
-            <div class="card"><img src="imagens/metroboomin.jpg" alt="Foto de SZA" class="foto-artista"><P>Metro Boomin</P></div>
+            <div class="col-1 text-center">
+            <button class="btn btn-outline-dark">←</button>
         </div>
 
+        <div class="lista-artistas" id="lista-musicos">
+            <div class="row">
 
-        <button class="seta">→</button>
+    <div class="col-md-12 col-6 col-lg-3 mb-3">
+        <div class="card h-100">
+            <img src="imagens/ludacris.webp" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text text-center">Ludacris</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-6 col-lg-3 mb-3">
+        <div class="card h-100">
+            <img src="imagens/sza.jpg" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text text-center">SZA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-6 col-lg-3 mb-3">
+        <div class="card h-100">
+            <img src="imagens/adele.jpg" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text text-center">adele</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 col-6 col-lg-3 mb-3">
+        <div class="card h-100">
+            <img src="imagens/metroboomin.jpg" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text text-center">metroboomin</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-1 text-center">
+            <button class="btn btn-outline-dark">→</button>
+        </div>
+
+</div>
+
         
         </div>
         </div>
@@ -51,35 +89,50 @@
     <section class="categoria-Artistas">
         <h2>Artistas</h2>
         <div class="carrossel">
-            <button class="seta">←</button>
-        <div class="lista-cards">
-            <div class="card">
-            <img src="imagens/adam-sandler.webp" alt="Foto de Adam Sandler" class="foto-artista">
-            <P>Adam Sandler</P>
+            <div class="col-1 text-center">
+            <button class="btn btn-outline-dark">←</button>
         </div>
+        <div class="row">
+    <div class="col-md-12 col-12 mb-3">
+        <div class="card h-100">
+            <img src="imagens/adam-sandler.webp" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text text-center">Adam Sandler</p>
+            </div>
         </div>
+    </div>
+</div>
 
-
-        <button class="seta">→</button>
+        <div class="col-1 text-center">
+            <button class="btn btn-outline-dark">→</button>
+        </div>
         </div>
     </section>
-    <section class="categoria-Artistas">
+    <section class="mt-4">
         <h2>Outros</h2>
         <div class="carrossel">
-            <button class="seta">←</button>
-
-        <div class="lista-cards">
-            <div class="card">
-            <img src="imagens/nolan.jpg" alt="Foto de Christopher Nolan" class="foto-artista">
-            <P>Christopher Nolan</P>
-        </div>
+            <div class="col-1 text-center">
+            <button class="btn btn-outline-dark">←</button>
         </div>
 
+        <div class="row">
+    <div class="col-md-12 col-12 mb-3">
+        <div class="card h-100">
+            <img src="imagens/nolan.jpg" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text text-center">Christopher Nolan</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <button class="seta">→</button>
+
+        <div class="col-1 text-center">
+            <button class="btn btn-outline-dark">→</button>
+        </div>
         </div>
     </section>
-    <footer>
+    <footer class="bg-dark text-white text-center p-3 mt-4">
         <p>© 2026 Influências no Cinema. Todos os direitos reservados.
         </p>
     </footer>
