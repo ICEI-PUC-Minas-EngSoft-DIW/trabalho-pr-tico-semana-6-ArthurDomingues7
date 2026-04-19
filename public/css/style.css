@@ -1,0 +1,101 @@
+body {
+    font-family: 'Montserrat Alternates';
+    padding: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color:#f0f0f0;
+}
+h1 {font-size: 52px;
+}
+.foto-header {
+    border: 0px solid black;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+.barra-busca {
+}
+.cabecalho-secao {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+.lista-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    gap: 70px;
+    scroll-behavior: smooth;
+    flex: 1;
+}
+.seta {
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 40px;
+    weight: 40px;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+.card {
+    flex-shrink: 0;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+.lista-cards::-webkit-scrollbar {
+    display: none;
+}
+.foto-artista {
+    width: 250px;
+    height: 320px;
+    border: 0px solid black;
+    margin-bottom: 10px;
+    background-color: #e0e0e0;
+    border-radius: 1px
+}
+h2 {font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .cabecalho-secao {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .foto-header {
+        width: 100%;
+        height: auto; 
+    }
+    .lista-cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .card {
+        width: 100%;
+    }
+    .seta {
+        display: none;
+    }
+}
