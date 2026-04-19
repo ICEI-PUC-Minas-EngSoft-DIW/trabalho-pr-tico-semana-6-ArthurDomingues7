@@ -8,10 +8,10 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Arthur Willian Gonçalves Domingues
+- Matricula: 1662628
+- Proposta de projeto escolhida: Influência de Grandes Nomes no Cinema
+- Breve descrição sobre seu projeto: Site sobre como o trabalho de grandes nomes da industria musical e artistíca no geral, contribuem para o crescimento e sucesso do Cinema.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
